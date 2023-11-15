@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "153158111312",
+    "project_id": "engigen",
+    "storage_bucket": "engigen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153158111312:android:58a32e1bdcdceed4850155",
+        "android_client_info": {
+          "package_name": "com.example.engigen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALJ1ENn4q0eUwvaS_4vJTz_wfpyi9UEk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,9 +6,8 @@ import 'firebase_options.dart';
 void main() async {
   //Firebase init
 
-  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  //Running the root of the app
+  //Running the root of the app hi rayane
 
   runApp(const MyApp());
 }

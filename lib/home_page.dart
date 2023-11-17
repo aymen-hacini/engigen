@@ -1,5 +1,5 @@
+import 'package:engigen/Auth/company_profile.dart';
 import 'package:engigen/constants.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -56,134 +56,144 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: const Alignment(0.00, -1.00),
-            end: const Alignment(0, 1),
-            colors: [
-              const Color(0xFF2B3481),
-              const Color.fromARGB(255, 0, 0, 0).withOpacity(1)
-            ],
-          ),
+      body: const CompanyProfile(),
+    );
+  }
+}
+
+class HomepageTab extends StatelessWidget {
+  const HomepageTab({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: const Alignment(0.00, -1.00),
+          end: const Alignment(0, 1),
+          colors: [
+            const Color(0xFF2B3481),
+            const Color.fromARGB(255, 0, 0, 0).withOpacity(1)
+          ],
         ),
-        child:
-            ListView(physics: const BouncingScrollPhysics(), children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 360,
-                height: 120,
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      width: 336,
-                      height: 120,
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      decoration: ShapeDecoration(
-                        gradient: const LinearGradient(
-                          begin: Alignment(0.00, -1.00),
-                          end: Alignment(0, 1),
-                          colors: [
-                            Color(0xFF2B3481),
-                            Color.fromARGB(255, 35, 42, 106)
-                          ],
-                        ),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6)),
-                      ),
-                      child: const Column(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SizedBox(
-                            width: 304,
-                            height: 16,
-                            child: Text(
-                              'The Way to Start Up',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Color(0xEEEEEEEE),
-                                fontSize: 30,
-                                fontFamily: 'Mukta',
-                                fontWeight: FontWeight.w500,
-                                height: 0.09,
-                              ),
-                            ),
-                          ),
+      ),
+      child: ListView(physics: const BouncingScrollPhysics(), children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 360,
+              height: 120,
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              clipBehavior: Clip.antiAlias,
+              decoration: const BoxDecoration(),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 336,
+                    height: 120,
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    decoration: ShapeDecoration(
+                      gradient: const LinearGradient(
+                        begin: Alignment(0.00, -1.00),
+                        end: Alignment(0, 1),
+                        colors: [
+                          Color(0xFF2B3481),
+                          Color.fromARGB(255, 35, 42, 106)
                         ],
                       ),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
                     ),
-                  ],
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Section_Title(
-                  title: "Services",
-                ),
-              ),
-              const SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    ServiceCard(
-                      imagename: financeimage,
-                      title: 'Finance',
-                      Desc: "Get the financial status",
+                    child: const Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          width: 304,
+                          height: 16,
+                          child: Text(
+                            'The Way to Start Up',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Color(0xEEEEEEEE),
+                              fontSize: 30,
+                              fontFamily: 'Mukta',
+                              fontWeight: FontWeight.w500,
+                              height: 0.09,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                    ServiceCard(
-                        imagename: hrimage,
-                        title: "Human Resources",
-                        Desc: "Organise HR Harmony"),
-                    ServiceCard(
-                        imagename: consultimage,
-                        title: "Consultation",
-                        Desc: "Schedule a meeting")
-                  ],
-                ),
+                  ),
+                ],
               ),
-              const Padding(
-                padding: EdgeInsets.all(15),
-                child: Section_Title(title: "Partners Reviews"),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Section_Title(
+                title: "Services",
               ),
-              const SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(right: 5, left: 10),
-                      child: partner_review_card(),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 5, left: 10),
-                      child: partner_review_card(),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 5, left: 10),
-                      child: partner_review_card(),
-                    ),
-                  ],
-                ),
+            ),
+            const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  ServiceCard(
+                    imagename: financeimage,
+                    title: 'Finance',
+                    Desc: "Get the financial status",
+                  ),
+                  ServiceCard(
+                      imagename: hrimage,
+                      title: "Human Resources",
+                      Desc: "Organise HR Harmony"),
+                  ServiceCard(
+                      imagename: consultimage,
+                      title: "Consultation",
+                      Desc: "Schedule a meeting")
+                ],
               ),
-              const partner_review_card()
-            ],
-          ),
-        ]),
-      ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(15),
+              child: Section_Title(title: "Partners Reviews"),
+            ),
+            const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 5, left: 10),
+                    child: partner_review_card(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 5, left: 10),
+                    child: partner_review_card(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 5, left: 10),
+                    child: partner_review_card(),
+                  ),
+                ],
+              ),
+            ),
+            const partner_review_card()
+          ],
+        ),
+      ]),
     );
   }
 }

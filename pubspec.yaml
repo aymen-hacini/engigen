@@ -71,6 +71,11 @@ flutter:
     - assets/images/finance.jpg
     - assets/images/consult.jpg
     - assets/images/hublink.svg
+    - assets/images/website.png
+    - assets/images/workers.png
+    - assets/images/invest.png
+    - assets/images/contact.png
+    - assets/images/about.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

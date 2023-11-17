@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:engigen/Auth/company_profile.dart';
 import 'package:engigen/Auth/signup_page.dart';
 import 'package:engigen/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';

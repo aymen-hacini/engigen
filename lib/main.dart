@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import 'package:engigen/LinkingHub/link_hub.dart';
+=======
+import 'package:engigen/Auth/signup_page.dart';
+>>>>>>> 6d89535999140e207b0ea94bf1220f564fc84b33
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -19,9 +23,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return const MaterialApp(
       home: LinkedHub(),
       debugShowCheckedModeBanner: false,
     );
+=======
+    return MaterialApp(title: 'Engigen App', home: SignupPage());
+>>>>>>> 6d89535999140e207b0ea94bf1220f564fc84b33
   }
 }

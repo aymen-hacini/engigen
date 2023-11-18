@@ -1,5 +1,5 @@
 import 'package:engigen/constants.dart';
-import 'package:flutter/gestures.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -69,8 +69,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-        child:
-            ListView(physics: const BouncingScrollPhysics(), children: [
+        child: ListView(physics: const BouncingScrollPhysics(), children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

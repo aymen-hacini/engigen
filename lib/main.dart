@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import 'package:engigen/LinkingHub/link_hub.dart';
 =======
+=======
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:engigen/Auth/company_profile.dart';
+>>>>>>> c7619a56a8179685fffdd19376817b34b3cb96d1
 import 'package:engigen/Auth/signup_page.dart';
 >>>>>>> 6d89535999140e207b0ea94bf1220f564fc84b33
 

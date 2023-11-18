@@ -75,6 +75,7 @@ flutter:
     - assets/images/finance.jpg
     - assets/images/consult.jpg
     - assets/images/hublink.svg
+<<<<<<< HEAD
     - assets/images/budget.png
     - assets/images/selection.png
     - assets/images/flexibility.png
@@ -82,6 +83,13 @@ flutter:
     - assets/images/gsh.png
     - assets/images/sonatrach.png
     - assets/images/Comp.png
+=======
+    - assets/images/website.png
+    - assets/images/workers.png
+    - assets/images/invest.png
+    - assets/images/contact.png
+    - assets/images/about.png
+>>>>>>> c7619a56a8179685fffdd19376817b34b3cb96d1
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
